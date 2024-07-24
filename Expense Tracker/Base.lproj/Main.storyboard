@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3fw-iF-VPo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHo-4i-uUW">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="392"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet Mangukiya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iW2-Hc-rpN">
+                                        <rect key="frame" x="13" y="67" width="229" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZA1-VU-Mbt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ9-rm-e87">
+                                        <rect key="frame" x="13" y="108" width="122" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="I0B-mp-p5x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKn-HD-mLO">
+                                        <rect key="frame" x="13" y="171" width="78.333333333333329" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="WCV-sv-cp6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹25,000/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ky0-iy-WVB">
+                                        <rect key="frame" x="13" y="201" width="170" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="cXq-VG-6mp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIV-25-E6A">
+                                        <rect key="frame" x="13" y="270" width="170" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowshape.up.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mv5-Yx-oEt">
+                                                <rect key="frame" x="17" y="33" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRa-2q-4Ez">
+                                                <rect key="frame" x="55" y="25" width="40" height="12"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="₹5,000/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scn-SA-UZz">
+                                                <rect key="frame" x="55" y="42" width="107" height="19"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blh-KK-XUD">
+                                        <rect key="frame" x="210" y="270" width="170" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrowshape.down.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cap-cw-Sy2">
+                                                <rect key="frame" x="17" y="33" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Expense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEk-HB-nfC">
+                                                <rect key="frame" x="55" y="25" width="42" height="13"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="₹20,000/-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tc3-cu-5DO">
+                                                <rect key="frame" x="55" y="45" width="107" height="19"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="EKn-HD-mLO" firstAttribute="top" secondItem="XQ9-rm-e87" secondAttribute="bottom" constant="39" id="85Z-WE-vVq"/>
+                                    <constraint firstItem="EKn-HD-mLO" firstAttribute="leading" secondItem="PHo-4i-uUW" secondAttribute="leading" constant="13" id="NzH-hA-KpA"/>
+                                    <constraint firstAttribute="height" constant="392" id="Pge-I2-4HB"/>
+                                    <constraint firstItem="ky0-iy-WVB" firstAttribute="top" secondItem="EKn-HD-mLO" secondAttribute="bottom" constant="5" id="SuX-pO-Q2M"/>
+                                    <constraint firstItem="iW2-Hc-rpN" firstAttribute="top" secondItem="PHo-4i-uUW" secondAttribute="top" constant="67" id="YJJ-K1-xrf"/>
+                                    <constraint firstItem="ky0-iy-WVB" firstAttribute="leading" secondItem="PHo-4i-uUW" secondAttribute="leading" constant="13" id="Ykn-nb-11d"/>
+                                    <constraint firstItem="XQ9-rm-e87" firstAttribute="leading" secondItem="PHo-4i-uUW" secondAttribute="leading" constant="13" id="f7d-DR-oiY"/>
+                                    <constraint firstItem="iW2-Hc-rpN" firstAttribute="leading" secondItem="PHo-4i-uUW" secondAttribute="leading" constant="13" id="g3S-hj-Oql"/>
+                                    <constraint firstItem="XQ9-rm-e87" firstAttribute="top" secondItem="iW2-Hc-rpN" secondAttribute="bottom" constant="1" id="hnA-tw-PTK"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent Transaction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBZ-dg-aTH">
+                                <rect key="frame" x="16" y="414" width="189.66666666666666" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Qeb-YR-Y4r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="w9P-Tu-FP6">
+                                <rect key="frame" x="0.0" y="444" width="393" height="322"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="322" id="mg7-lV-ujA"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="64" id="FzQ-8i-fcO" customClass="TransactionTableViewCell" customModule="Expense_Tracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FzQ-8i-fcO" id="SAO-oI-PH1">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloths" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiU-ks-Ozv">
+                                                    <rect key="frame" x="20" y="11" width="200" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="Ct6-Dq-l2l"/>
+                                                        <constraint firstAttribute="height" constant="21" id="RoV-hX-kKW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹5,000/-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45s-In-Tg9">
+                                                    <rect key="frame" x="228" y="11" width="145" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="69i-f3-eee"/>
+                                                        <constraint firstAttribute="width" constant="145" id="F9y-F7-ku1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="18"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaH-tr-30c">
+                                                    <rect key="frame" x="20" y="37" width="62" height="11"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="11" id="2nu-Rv-Uh4"/>
+                                                        <constraint firstAttribute="width" constant="62" id="NEf-2J-mes"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFX-4u-Amk">
+                                                    <rect key="frame" x="223" y="38" width="150" height="13"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="FJ8-LM-Vkc"/>
+                                                        <constraint firstAttribute="height" constant="13" id="iMf-Oh-Ft0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FFX-4u-Amk" firstAttribute="trailing" secondItem="SAO-oI-PH1" secondAttribute="trailingMargin" id="3nt-JR-4FL"/>
+                                                <constraint firstItem="FFX-4u-Amk" firstAttribute="top" secondItem="45s-In-Tg9" secondAttribute="bottom" constant="5" id="HBb-hx-CNq"/>
+                                                <constraint firstItem="45s-In-Tg9" firstAttribute="top" secondItem="SAO-oI-PH1" secondAttribute="topMargin" id="Pae-4u-RG3"/>
+                                                <constraint firstItem="JaH-tr-30c" firstAttribute="leading" secondItem="SAO-oI-PH1" secondAttribute="leadingMargin" id="Xfp-Ep-vAu"/>
+                                                <constraint firstItem="JaH-tr-30c" firstAttribute="top" secondItem="AiU-ks-Ozv" secondAttribute="bottom" constant="5" id="ZVa-vX-KDe"/>
+                                                <constraint firstItem="45s-In-Tg9" firstAttribute="trailing" secondItem="SAO-oI-PH1" secondAttribute="trailingMargin" id="agf-AM-FeH"/>
+                                                <constraint firstItem="AiU-ks-Ozv" firstAttribute="leading" secondItem="SAO-oI-PH1" secondAttribute="leadingMargin" id="csg-Vl-seP"/>
+                                                <constraint firstItem="AiU-ks-Ozv" firstAttribute="top" secondItem="SAO-oI-PH1" secondAttribute="topMargin" id="jCt-OA-nC9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLable" destination="AiU-ks-Ozv" id="b89-BW-t32"/>
+                                            <outlet property="datelable" destination="FFX-4u-Amk" id="ymK-ZK-ggr"/>
+                                            <outlet property="pricelable" destination="45s-In-Tg9" id="Cjq-NT-ADP"/>
+                                            <outlet property="typeLable" destination="JaH-tr-30c" id="raC-Bf-1iy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="FnJ-KI-bTi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="snf-eg-SYW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w9P-Tu-FP6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9tH-Ik-tn7"/>
+                            <constraint firstItem="w9P-Tu-FP6" firstAttribute="top" secondItem="CBZ-dg-aTH" secondAttribute="bottom" constant="5" id="mt9-Qr-3Ot"/>
+                            <constraint firstItem="CBZ-dg-aTH" firstAttribute="top" secondItem="PHo-4i-uUW" secondAttribute="bottom" constant="22" id="pB1-nR-SFe"/>
+                            <constraint firstItem="PHo-4i-uUW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rq9-zK-68a"/>
+                            <constraint firstItem="w9P-Tu-FP6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uhC-5B-gge"/>
+                            <constraint firstItem="PHo-4i-uUW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vXa-Ls-tRc"/>
+                            <constraint firstItem="CBZ-dg-aTH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wI7-1n-gMP"/>
+                            <constraint firstItem="PHo-4i-uUW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wys-Sy-adg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XE9-Xo-i8D"/>
+                    <connections>
+                        <outlet property="ExpenseView" destination="blh-KK-XUD" id="TWW-eR-Zx1"/>
+                        <outlet property="expenceTotalTxt" destination="Tc3-cu-5DO" id="e1H-kk-vm8"/>
+                        <outlet property="headerView" destination="PHo-4i-uUW" id="HCm-UR-f9I"/>
+                        <outlet property="incomeTotalTxt" destination="scn-SA-UZz" id="Xfz-So-rgl"/>
+                        <outlet property="incomeView" destination="NIV-25-E6A" id="KIG-bV-K7X"/>
+                        <outlet property="tableViewOutlet" destination="w9P-Tu-FP6" id="RFL-Qe-G2o"/>
+                        <outlet property="totalRsLableOutlet" destination="ky0-iy-WVB" id="KC0-OS-3vl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799.2366412213739" y="-696.47887323943667"/>
+        </scene>
+        <!--Delete View Controller-->
+        <scene sceneID="z0L-tl-10n">
+            <objects>
+                <viewController storyboardIdentifier="DeleteViewController" id="R7c-eT-sxm" customClass="DeleteViewController" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q4q-7F-Z8f">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Edit Transaction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfR-17-yy3">
+                                <rect key="frame" x="96" y="59" width="200" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cloths" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z45-se-7Ot">
+                                <rect key="frame" x="16" y="139" width="186" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Income" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktr-pQ-XL5">
+                                <rect key="frame" x="16" y="178" width="57" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="₹5000/-" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5B-3u-Rgx">
+                                <rect key="frame" x="192" y="139" width="185" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgS-JA-6nV">
+                                <rect key="frame" x="155" y="178" width="222" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUI-Ak-SZE">
+                                <rect key="frame" x="16" y="458" width="168" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2053279579" green="0.78167361020000004" blue="0.34997516870000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Edit">
+                                    <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUh-3Y-p2b">
+                                <rect key="frame" x="210" y="458" width="167" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.26844969390000001" blue="0.2282280028" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete">
+                                    <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteBynAction:" destination="R7c-eT-sxm" eventType="touchUpInside" id="UMd-9Z-yxY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-h4-hpL">
+                                <rect key="frame" x="16" y="260" width="361" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hhz-aT-puM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="categorylable" destination="z45-se-7Ot" id="SKB-lX-5BH"/>
+                        <outlet property="dateLable" destination="UgS-JA-6nV" id="kis-QB-sQU"/>
+                        <outlet property="deleteBtnAction" destination="pUh-3Y-p2b" id="Bcm-89-6w1"/>
+                        <outlet property="editBtnAction" destination="BUI-Ak-SZE" id="T6s-WS-hT8"/>
+                        <outlet property="notesLable" destination="Lq9-h4-hpL" id="sL0-Fm-xKS"/>
+                        <outlet property="priceLable" destination="G5B-3u-Rgx" id="lYf-IR-uC8"/>
+                        <outlet property="typelable" destination="ktr-pQ-XL5" id="UiS-fV-amX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qL4-3f-hDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.2671755725191" y="-696.47887323943667"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="abK-lZ-MY1">
+            <objects>
+                <viewController id="WfU-Fk-hoj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hck-tX-4M6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Fnz-Jd-m2M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="chart.bar" catalog="system" selectedImage="chart.bar" id="3mC-5m-vgs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUn-e2-JgK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="-27"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cz7-7w-ajE">
+            <objects>
+                <viewController id="Syd-Ak-ddW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UE4-gs-VqM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UuG-0M-5ys"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person" id="Hmm-pA-uPn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nqF-RU-QNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="675"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RKC-EE-0Ez">
+            <objects>
+                <viewController id="dkW-kH-tho" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XvP-PM-LPl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iBr-KS-LSF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="bell" catalog="system" selectedImage="bell" id="kG4-wD-saY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MD8-Cg-TLp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873" y="675"/>
+        </scene>
+        <!--Add TransactionVC-->
+        <scene sceneID="M2Q-ra-O7v">
+            <objects>
+                <viewController storyboardIdentifier="AddTransactionVC" id="W58-CH-pht" customClass="AddTransactionVC" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8HC-4c-vqD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Transaction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-rs-E9h">
+                                <rect key="frame" x="96" y="59" width="200" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pVb-ai-PQN">
+                                <rect key="frame" x="16" y="180" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuq-RT-Igj">
+                                <rect key="frame" x="16" y="150" width="71" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9O-1I-7YL">
+                                <rect key="frame" x="16" y="277" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahn-Sa-Zsy">
+                                <rect key="frame" x="16" y="247" width="82" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Notes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eg8-mR-cTY">
+                                <rect key="frame" x="16" y="376" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9f-px-sTf">
+                                <rect key="frame" x="16" y="346" width="52" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0FK-P2-mJa">
+                                <rect key="frame" x="16" y="499" width="168" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2053279579" green="0.78167361020000004" blue="0.34997516870000001" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Income">
+                                    <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="incomeBtnAction:" destination="W58-CH-pht" eventType="touchUpInside" id="Okp-tK-qUr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFs-R8-86w">
+                                <rect key="frame" x="210" y="499" width="167" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.26844969390000001" blue="0.2282280028" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Expense">
+                                    <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="15"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="expenceBtnAction:" destination="W58-CH-pht" eventType="touchUpInside" id="3io-zr-Prp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C41-NL-TGY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pa0-Eu-fDA"/>
+                    <connections>
+                        <outlet property="amountTxtOutlet" destination="pVb-ai-PQN" id="80l-b1-BZc"/>
+                        <outlet property="categoryTxtOutlet" destination="p9O-1I-7YL" id="sDU-dW-H0j"/>
+                        <outlet property="expenceBtnAction" destination="UFs-R8-86w" id="pRr-I1-xF1"/>
+                        <outlet property="incomeBtnAction" destination="0FK-P2-mJa" id="f06-CT-zKJ"/>
+                        <outlet property="noteTxtOutlet" destination="Eg8-mR-cTY" id="a5E-z0-wft"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrA-P8-kHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2525.9541984732823" y="10.563380281690142"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="aCD-cJ-Lv0">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="3fw-iF-VPo" customClass="ViewController1" customModule="Expense_Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mje-Lf-UQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Uya-a9-TVF"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vBm-KP-64r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3318" y="11"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jQ1-fg-27W">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="zDl-pd-X5Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hte-B2-Nby">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SBn-Rg-0qX" kind="relationship" relationship="viewControllers" id="JcE-cr-zaH"/>
+                        <segue destination="WfU-Fk-hoj" kind="relationship" relationship="viewControllers" id="elL-oF-q4D"/>
+                        <segue destination="P3j-Et-fqA" kind="relationship" relationship="viewControllers" id="3fy-Tu-c5L"/>
+                        <segue destination="dkW-kH-tho" kind="relationship" relationship="viewControllers" id="Oqg-ko-vZh"/>
+                        <segue destination="Syd-Ak-ddW" kind="relationship" relationship="viewControllers" id="uqM-jf-BmZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vah-OW-ghJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4tQ-sw-bdo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P3j-Et-fqA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="lvP-Xn-CHi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xu8-Ao-nlv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="W58-CH-pht" kind="relationship" relationship="rootViewController" id="VFb-dX-RCV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7FU-Oy-n7q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XZL-y9-6cq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SBn-Rg-0qX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" selectedImage="homekit" id="Oe5-Jb-WVs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uK4-pL-Fji">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6jA-QG-qMl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4BQ-29-beo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="872.51908396946567" y="-696.47887323943667"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.down.circle" catalog="system" width="128" height="123"/>
+        <image name="arrowshape.up.circle" catalog="system" width="128" height="123"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="chart.bar" catalog="system" width="128" height="89"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
